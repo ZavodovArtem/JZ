@@ -1,38 +1,105 @@
 .App {
   text-align: center;
+  background-color: #F2E8E5;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Appp{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #F2E8E5;
 }
 
-.App-link {
-  color: #61dafb;
+.AppForLoader{
+  text-align: center;
+  background-color: #F2E8E5;
+  height: 1000px;
+ 
 }
 
-@keyframes App-logo-spin {
+
+/* .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  background-color: #F2E8E5;
+} */
+
+/* @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+
+.loadere{
+  animation: colorize 3s infinite;
+}
+
+@keyframes colorize{
+  0% {filter: grayscale(100%);}
+  50% {filter: grayscale(0%);}
+  100% {filter: grayscale(100%);}
+}
+
+
+
+
+.loa{
+  /* animation: fadeIn 2.5s ease-in-out; */
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.loaOne{
+  animation-delay: 0.5s;
+}
+.loaTwo{
+  animation-delay: 1s;
+}
+.loaThree{
+  animation-delay: 1.5s;
+}
+.loaFour{
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+
+
+
+/* .loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.loadingText {
+  animation: fadeIn 3s ease-in forwards;
+  opacity: 0;
+  color: red;
+}
+
+.loaded .loadingText {
+  display: none;
+} */

@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/header';
+import BodySewing from './components/bodySewing';
+import BodyPhilosophy from './components/bodyPhilosophy';
+import BodyStep from './components/bodyStep';
+import BodyMoney from './components/bodyMoney';
+import BodyForm from './components/bodyForm';
 
-function App() {
+import logoLoad from '../src/components/img/header/logo.svg'
+import Footer from './components/footer';
+
+
+
+const LoadingAnimation: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Используйте переменную для определения класса контейнера
+  const containerClass = loading ? 'Appp' : 'App';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={containerClass}>
+      {loading ? (
+        // <div className="loader"></div>
+        <>
+        <p className='loa loaOne fontRegular'>Индивидуальный</p>
+        <p className='loa loaThree fontRegular'>пошив</p>
+        <img className='loadere' src={logoLoad} alt="" />
+        <p className='loa loaTwo fontRegular'>Юлия</p>
+        <p className='loa loaFour fontRegular'>Заводова</p>
+        </>
+      ) : (
+        <>
+          <Header />
+          <BodySewing />
+          <BodyPhilosophy />
+          <BodyStep />
+          <BodyMoney />
+          <BodyForm />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
 
+function App() {
+  return <LoadingAnimation />;
+}
+
 export default App;
+

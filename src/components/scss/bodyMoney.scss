@@ -1,0 +1,37 @@
+.BodyMoney{
+    display: flex;
+    // justify-content: space-between;
+    width: 1600px;
+    margin: 0  auto;
+    height: 1000px;
+    align-items: center;
+    // padding: 100px;
+    .BodyMoneyLeft{
+        position: absolute;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        width: 850px;
+        font-size: 32px;
+        margin-top: 300px;
+        text-align: left;
+    }
+    .BodyMoneyMiddle{
+        display: flex;
+        margin: 0 auto;
+        // text-align: center;
+        // width: 533px;
+        // height: 700px;
+    }
+    .BodyMoneyRight{
+        position: absolute;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        width: 600px;
+        font-size: 20px;
+        margin-left: 900px;
+        margin-top: -350px;
+        text-align: left;
+    }
+}

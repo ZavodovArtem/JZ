@@ -1,0 +1,40 @@
+.hamburgerMain{
+
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .hamburger{
+        position: relative;
+        z-index: 4;
+       cursor: pointer;
+       
+       
+    }
+    .hamburgerMenu{
+        position: absolute;
+        z-index: 4;
+        .hamburgerMenuUl{
+            list-style-type: none;
+            margin: 0  auto;
+            
+            .hamburgerMenuLi{
+                margin: 10px;
+            }
+        }
+    }
+    
+    .image {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center; 
+    }
+    
+    .image.pop{ 
+        transform: scale(1.2) rotate(90deg); 
+    }
+    
+    .image.rotated{
+        transform: rotate(90deg); 
+        transition-delay: 0.1s;
+    }
+}

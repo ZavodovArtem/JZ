@@ -1,0 +1,34 @@
+
+.BodySewingAll{
+
+    width: 1600px;
+    margin: 0 auto;
+    height: 1000px;
+    // align-items: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin: 100px;
+    .BodySewingH{
+        font-size: 32px;
+        // margin: 200px;
+        margin-bottom: 200px;
+        display: flex;
+        // text-align: left;
+    }
+
+    .BodySewingGrid{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* Создает 8 столбцов с равной шириной */
+        grid-template-rows: repeat(2, auto); /* Создает 2 строки с автоматической высотой */
+        // gap: 10px;
+        row-gap: 200px;
+        .BodySewingGridP{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

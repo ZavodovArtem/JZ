@@ -1,0 +1,77 @@
+.BodyStep{
+    // position: relative;
+    margin: 0 auto;
+    .BodyStepH{ 
+        margin-right: 600px;
+        margin-top: 100px;
+    }
+    .BodyStepUp{
+        // position: relative;
+        display: flex;
+        width: 1600px;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-between;
+        // margin-bottom: 300px;
+        .BodyStepUpOne{
+            // position: relative;
+            // display: flex;
+            margin-top: 150px;
+        }
+        .BodyStepUpOneDiv{
+            margin-top: 150px;
+        }
+        .BodyStepUpTwo{
+            // margin-top: 120px;
+        }
+        .BodyStepUpTwoDiv{
+            margin-top: 170px;
+        }
+        .BodyStepUpThree{
+            margin-top: 180px;
+        }
+        .BodyStepUpThreeDiv{
+            margin-top: 150px;
+        }
+        .BodyStepUpFour{
+            margin-top: 100px;
+        }
+    }
+    .BodyStepMiddle{
+        // position: absolute;
+        // display: flex;
+        // text-align: right;
+        // flex-direction: column;
+        margin-left: 1500px;
+    }
+    .BodyStepDown{
+        // position: relative;
+        display: flex;
+        width: 1600px;
+        margin: 0 auto;
+        justify-content: space-between;
+        .BodyStepDownThree{
+            margin-right: 100px;
+            margin-bottom: 200px;
+        }
+        .BodyStepDownThreeDiv{
+            margin-bottom: 150px;
+        }
+        .BodyStepDownTwo{
+            margin-bottom: 300px;
+        }
+        .BodyStepDownTwoDiv{
+            margin-top: 100px;
+        }
+        .BodyStepDownOne{
+            margin-bottom: 200px;
+        }
+        .BodyStepDownOneDiv{
+            margin-top: 100px;
+        }
+    }
+}
+
+.bodyStepSize{
+    font-size: 20px;
+}
