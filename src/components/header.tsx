@@ -13,6 +13,10 @@ import '../components/scss/AllBasicStyles.scss'
 // import { useState } from 'react';
 
 import Hamburger from '../components/hamburger'
+// import LetterDrawingAnimation from "./testText";
+
+import HamburgerO from './archive/tsxArchive/hamburgerTestArchive'
+
 
 
 function Header() {
@@ -27,8 +31,12 @@ function Header() {
                         <p className="headerTextT fontMedium">Пошив на заказ</p>
                         <p className="headerTextT fontMedium">Цены</p>
                         <p className="headerTextT fontMedium">Философия</p>
+                        
                     </div>
-                    <Hamburger />
+                    {/* <LetterDrawingAnimation /> */}
+                    <Hamburger  />
+                    {/* <LetterDrawingAnimation /> */}
+                    {/* <HamburgerO /> */}
                     
                 </div>
                 <div className="headerTwoBlock">

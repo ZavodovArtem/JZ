@@ -12,6 +12,7 @@ import Footer from './components/footer';
 
 
 
+
 const LoadingAnimation: React.FC = () => {
   const [loading, setLoading] = useState(true);
 

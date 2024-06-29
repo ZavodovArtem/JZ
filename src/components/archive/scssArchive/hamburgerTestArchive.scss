@@ -1,0 +1,48 @@
+// .letter-drawing-container {
+//     font-size: 24px;
+//     font-weight: bold;
+//     font-family: 'Courier New', monospace;
+//   }
+  
+//   .draw {
+//     animation: drawLetter 1s ease forwards;
+//     opacity: 0;
+//     display: inline-block;
+//   }
+  
+//   @keyframes drawLetter {
+//     0% {
+//       opacity: 0;
+//     }
+//     50% {
+//       opacity: 0.5;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+
+
+
+
+
+// .hamburgerMenuLi span {
+//     opacity: 0;
+//     transform: translateY(-20px);
+//     animation: fadeInUp 5.3s forwards;
+// }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animated-letter {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Установите продолжительность анимации по вашему усмотрению */
+    animation: fadeInUp 0.5s forwards;
+}
